@@ -17,27 +17,28 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
- * This is a batch test file used by grading scripts to generate a full roster
- * grade report.
+ * This is a test wrapper used by grading scripts (using JUnit's standalone
+ * console)
  * 
- * This is a single, generic batch testing utility to be used for all java-based
- * labs. Invoke this class by providing a (space delimited) list of fully
- * qualified package/class JUnit test classes. Example:
+ * This is a single, generic batch testing utility. Invoke this class by
+ * providing a (space delimited) list of fully qualified package/class JUnit
+ * test classes. Examples:
  * 
- * unl.soc.StatisticsTests unl.soc.OtherTests
+ * Compile: javac -d . -cp .:/junit-platform-console-standalone-1.9.2.jar *.java
+ * 
+ * Run:
+ * 
+ * java -cp .:./junit-platform-console-standalone-1.9.2.jar unl.soc.TestWrapper unl.soc.ColorUtilsTests -reportPass
  * 
  * @author cbourke
- *
  */
 @SuppressWarnings("unused")
-public class BatchTest {
-
-	public static final int LAB_POINTS = 20;
+public class TestWrapper {
 
 	private final SummaryGeneratingListener listener = new SummaryGeneratingListener();
 	private final List<String> testClasses;
 
-	public BatchTest(List<String> testClasses) {
+	public TestWrapper(List<String> testClasses) {
 		this.testClasses = testClasses;
 	}
 
@@ -60,22 +61,37 @@ public class BatchTest {
 			System.exit(1);
 		}
 
-		BatchTest bt = new BatchTest(Arrays.asList(args));
+		boolean reportPass = false;
+		List<String> tests = new ArrayList<>();
+		for (String arg : args) {
+			if (arg.equals("-reportPass")) {
+				reportPass = true;
+			} else {
+				tests.add(arg);
+			}
+		}
+		TestWrapper bt = new TestWrapper(tests);
 
 		// suppress standard output while tests are run
-		PrintStream original = new PrintStream(System.out);
-		PrintStream nps;
-		try {
-			nps = new PrintStream(new FileOutputStream("/dev/null"));
-			System.setOut(nps);
-		} catch (FileNotFoundException e) {
-			e.printStackTrace();
+		boolean suppressStdOut = false;
+		PrintStream original = null;
+		if (suppressStdOut) {
+			original = new PrintStream(System.out);
+			PrintStream nps;
+			try {
+				nps = new PrintStream(new FileOutputStream("/dev/null"));
+				System.setOut(nps);
+			} catch (FileNotFoundException e) {
+				e.printStackTrace();
+			}
 		}
 
 		bt.runAll();
 
 		// restore standard output for report
-		System.setOut(original);
+		if (suppressStdOut) {
+			System.setOut(original);
+		}
 
 		TestExecutionSummary summary = bt.listener.getSummary();
 
@@ -85,7 +101,18 @@ public class BatchTest {
 
 		// prints total number of points, number of pass/fail
 		// and total tests in csv format
-		System.out.printf("%d,%d,%d,%d", numFail == 0 ? LAB_POINTS : 0, numPass, numFail, numTests);
+		System.out.printf("Tests PASS: %d\n", numPass);
+		System.out.printf("Tests FAIL: %d\n", numFail);
+		System.out.printf("Total:      %d\n", numTests);
+		
+		int exitValue = reportPass ? (int) numPass : (int) numFail;
+		if(exitValue > 255) {
+			exitValue = 1;
+		}
+		//POSIX only supports 0..255 (1 ubyte) exit codes; we do
+		// our best effort to report the value, but default to 1
+		// otherwise
+		System.exit(exitValue);
 
 	}
 
