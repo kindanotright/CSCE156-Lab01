@@ -1,10 +1,9 @@
 # Computer Science II
-## Lab 1.0 - Introduction
-
-**[School of Computing](https://computing.unl.edu/)**
-**[College of Engineering](https://engineering.unl.edu/)**
-**[University of Nebraska-Lincoln](https://unl.edu)**
-**[University of Nebraska-Omaha](https://unomaha.edu)**
+## Lab 1.0 - Introduction - Python Version
+[School of Computing](https://computing.unl.edu)  
+[College of Engineering](https://engineering.unl.edu/)  
+[University of Nebraska-Lincoln](https://unl.edu)  
+[University of Nebraska-Omaha](https://unomaha.edu)  
 
 An introduction to the Python programming language and tools.
 
@@ -59,43 +58,36 @@ lab.
 
 ### 1.1. Setup
 
-#### 1.1.1. Claim your CSE Account
-
-If you do not yet have your CSE credentials, you can claim them
-at the following URL: https://cse-apps.unl.edu/amu/claim
-If you already have a CSE account but do not remember your
-password you can reset it at the same URL.
-
-#### 1.1.2. Java
+#### 1.1.1. Java
 
 The Java version of this lab runs you through a setup and installation
-fo the Java Virtual Machine (JVM) and Java Development Kit (JDK) that
+of the Java Virtual Machine (JVM) and Java Development Kit (JDK) that
 are necessary for all students later in the semester.  It also runs
-you through the development, testing, handin and grading process for
-all Java labs.  All students should complete the Java section, even
+you through the development, testing, hand in and grading process for
+all Java labs and assignments.  All students should complete the Java section, even
 if you are already familiar with Java, in order to familiarize yourself
 with how labs will work for the semester.
 
-#### 1.1.3. Python
+#### 1.1.2. Python
 
 To write and execute Python scripts you'll need an editor and a Python
-interpretter.  If you've used the CS50 IDE (a codespaces/VS Code IDE),
-we recommned you continue using it for Python development.  Instructions
+interpreter.  If you've used the CS50 IDE (a codespaces/VS Code IDE),
+we recommend you continue using it for Python development.  Instructions
 for getting setup can be found here:
 
-https://github.com/cbourke/CSCE155-C-Lab01
+<https://github.com/cbourke/CSCE155-C-Lab01>
 
 Otherwise, there are other Python development IDEs that you can download
 and use:
 
-- PyCharm: https://www.jetbrains.com/pycharm/
-- Visual Studio: https://code.visualstudio.com/docs/languages/python
+- PyCharm: <https://www.jetbrains.com/pycharm/>
+- Visual Studio: <https://code.visualstudio.com/docs/languages/python>
 
 ## 2. Cloning Starter Code From Github
 
 Each lab will have some starter code and other *artifacts*
 (data files, scripts, etc.) that will be provided for to you.
-The code is hosted on Github (https://github.com) and you must
+The code is hosted on Github (<https://github.com>) and you must
 *clone* your own copy to work with it.  You will not need to
 know the details of using git nor be a registered Github user
 to get access to the code necessary for your labs.  However,
@@ -119,9 +111,9 @@ containing the Python code:
 
 ### 3.1.1 Running a Program
 
-Python is an interpretted language which means you don't compile
+Python is an interpreted language which means you don't compile
 source code into an executable program.  Instead, python scripts
-are executed using a python interpretter.  To run the interpretter,
+are executed using a python interpreter.  To run the interpreter,
 we have provided a simple Hello World script, `python.py` (generally,
 python scripts have a `.py` extension).
 
@@ -136,7 +128,7 @@ and observe the results.
 
 - Remove the `)` from the print statement to cause a syntax error and
 try to run the program again: observe how syntax errors are reported
-by the python interpretter.
+by the python interpreter.
 
 - Restore the `)` to the print statement and instead add a space before
 the `print` and try to run the program again: observe how spacing is an
@@ -200,33 +192,36 @@ has a standard `unittest` package for unit testing functions.
 
 ## 5. Submitting, & Grading your lab
 
-### 5.1 Submitting
+Nearly all of your assignments will include a programming portion 
+that will require you to hand in source files for graders to compile 
+and evaluate. To do this, we use a web-based assessment app called 
+codepost.io (<https://codepost.io>).
 
-Many of your assignments will include a programming portion that will
-require you to hand in *soft-copy* source files for graders to
-compile and evaluate.  To do this, you will use a web-based handin
-program.  After handing your file(s) in, you can then grade them by
-using the web grader.  To demonstrate, do the following.
+You should have received an invitation to this website from your 
+instructor through your email account (typically your `@huskers.unl.edu` 
+email or whatever email you have associated with on Canvas). If 
+you have access, great. If not, go to <https://codepost.io/forgot-password> 
+and "reset" your password (even if you never initially set one). Be 
+sure to use your huskers email or whatever primary email is associated 
+with your Canvas profile.
 
-1. Open a browser to https://cse-apps.unl.edu/handin
-2. Login with your **CSE credentials**
-3. Click on Lab 1.0 and hand in the `birthday.py` and `statistics.py` scripts
-You can either click the large
-"handin" area and select the file or you can drag-drop the files.  You
-will be able to re-handin the same file as many times as you want up
-until the due date.
+To handin and grade your lab, do the following.
 
-### 5.2 Grading
+1. Login to <https://codepost.io>.  It should immediately take you 
+   to the assignment submission page.
 
-Now that the lab has been handed in, you can "grade" yourself
-by using the webgrader
+2. For the relevant assignment click "Upload Assignment"
 
-1. Open a new tab/window and point your browser
-to https://cse.unl.edu/~cse156h/grade (depending on your section, this
-URL may be different).
-2. Fill the form with your CSE login and password, select the
-appropriate assignment and click "Grade"
-3. Observe the expected output and compare it to your output to be
-sure that your program is correct.  Address any issues and resubmit as
-many times as you like up to the due date.
+3. Upload the required files for the assignment.  For Lab 1.0, you'll
+   need to upload the `statistics.py` source file.
+   
+4. Click "Submit and Run Tests".  A success dialog should be displayed, but
+   **you are not yet done**.  
+   
+5. Click "View test results" to view the results of our tests and your grade.
+   If there are problems or errors with your program(s), you should 
+   fix/debug them and repeat the handin/grading process. You can do this 
+   as many times as you like up until the due date.
+
+***Congratulations on your first lab!***
 
