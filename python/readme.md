@@ -192,36 +192,46 @@ has a standard `unittest` package for unit testing functions.
 
 ## 5. Submitting, & Grading your lab
 
-Nearly all of your assignments will include a programming portion 
-that will require you to hand in source files for graders to compile 
-and evaluate. To do this, we use a web-based assessment app called 
-codepost.io (<https://codepost.io>).
+### Handin
 
-You should have received an invitation to this website from your 
-instructor through your email account (typically your `@huskers.unl.edu` 
-email or whatever email you have associated with on Canvas). If 
-you have access, great. If not, go to <https://codepost.io/forgot-password> 
-and "reset" your password (even if you never initially set one). Be 
-sure to use your huskers email or whatever primary email is associated 
-with your Canvas profile.
+Your assignments will include a programming portion that will 
+require you to hand in source files and other artifacts for graders to 
+compile and evaluate.  To do this, you will use a webhandin.
 
-To handin and grade your lab, do the following.
+1. Open a browser to <https://cse-apps.unl.edu/handin>
 
-1. Login to <https://codepost.io>.  It should immediately take you 
-   to the assignment submission page.
+2. Login with your **Canvas credentials**
 
-2. For the relevant assignment click "Upload Assignment"
+3. Click on Lab 1.0 and hand in the `Statistics.java` source file.  
+You can either click the large "handin" area and select the file 
+or you can drag-drop the files.  You will be able to re-handin 
+the same file as many times as you want up until the due date.
 
-3. Upload the required files for the assignment.  For Lab 1.0, you'll
-   need to upload the `statistics.py` source file.
-   
-4. Click "Submit and Run Tests".  A success dialog should be displayed, but
-   **you are not yet done**.  
-   
-5. Click "View test results" to view the results of our tests and your grade.
-   If there are problems or errors with your program(s), you should 
-   fix/debug them and repeat the handin/grading process. You can do this 
-   as many times as you like up until the due date.
+### Webgrader
+
+Now that the file has been handed in, you can "grade" yourself 
+by using the webgrader
+
+1. Open a new tab/window and point your browser 
+to one of the following URLs depending on the version of the course
+you are enrolled in:
+
+ * CSCE 156: <https://cse-linux-01.unl.edu/~c-cbourke3/CSCE156/grade/>
+ * CSCE 156H: <https://cse-linux-01.unl.edu/~c-cbourke3/CSCE156H/grade/>
+ * ECEN 194: <https://cse-linux-01.unl.edu/~c-cbourke3/ECEN194/grade/>
+
+2. Login with your **Canvas credentials** if necessary and select the 
+appropriate assignment and click "Grade"
+
+3. Observe the expected output and compare it to your output to be
+sure that your program is correct.  
+
+For labs, the grader script simply runs the provided `unittest` test
+suite, but it *may* run additional or modified tests.  In any case,
+be sure your code compiles, runs and **passes all test**s in the
+webgrader.  Address any issues and resubmit as many times as you 
+like up to the due date.  Only labs that pass all tests will be
+given credit.
 
 ***Congratulations on your first lab!***
 
