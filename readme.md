@@ -316,10 +316,7 @@ failed test cases).
 3. Address any issues or failing tests by debugging your code and 
 rerun the test suite until all tests pass.
 
-
-## 5. Submitting, & Grading your lab
-
-### Handin
+### 5.2 Handing it In (Handin)
 
 Your assignments will include a programming portion that will 
 require you to hand in source files and other artifacts for graders to 
@@ -334,7 +331,7 @@ You can either click the large "handin" area and select the file
 or you can drag-drop the files.  You will be able to re-handin 
 the same file as many times as you want up until the due date.
 
-### Webgrader
+### 5.3 Webgrader
 
 Now that the file has been handed in, you can "grade" yourself 
 by using the webgrader

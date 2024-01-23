@@ -215,13 +215,9 @@ the same file as many times as you want up until the due date.
 Now that the file has been handed in, you can "grade" yourself 
 by using the webgrader
 
-1. Open a new tab/window and point your browser 
-to one of the following URLs depending on the version of the course
-you are enrolled in:
+1. Open a new tab/window and point your browser to:
 
- * CSCE 156: <https://cse-linux-01.unl.edu/~c-cbourke3/CSCE156/grade/>
  * CSCE 156H: <https://cse-linux-01.unl.edu/~c-cbourke3/CSCE156H/grade/>
- * ECEN 194: <https://cse-linux-01.unl.edu/~c-cbourke3/ECEN194/grade/>
 
 2. Login with your **Canvas credentials** if necessary and select the 
 appropriate assignment and click "Grade"
