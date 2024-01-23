@@ -202,8 +202,11 @@ compile and evaluate.  To do this, you will use a webhandin.
 
 2. Login with your **Canvas credentials**
 
-3. Click on Lab 1.0 and hand in the `Statistics.java` source file.  
-You can either click the large "handin" area and select the file 
+3. Click on Lab 1.0 and hand in the
+  * `birthday.py` and 
+  * `statistics.py` 
+  
+source files. You can either click the large "handin" area and select the file 
 or you can drag-drop the files.  You will be able to re-handin 
 the same file as many times as you want up until the due date.
 
