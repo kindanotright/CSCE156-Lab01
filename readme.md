@@ -159,9 +159,10 @@ with how labs will work for the semester.  Only those
 We will now familiarize you with Eclipse by editing an existing
 project's code.
 
-1. Expand the `src` directory.  Under this we have a *package* named 
-`unl.soc`.  Java classes are organized in a hierarchy of packages.
-Packages correspond to actual directories in your file system.  
+1. Expand the main source directory: `src/main/java`.  Under this we 
+have a *package* named `unl.soc`.  Java classes are organized in a 
+hierarchy of packages.  Packages correspond to actual directories 
+in your file system.  
 
 2. Expand the package and you'll find several *classes*.	All Java code 
 must be contained in a class.  This is in contrast to other languages 
