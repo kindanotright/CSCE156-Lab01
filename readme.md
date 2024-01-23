@@ -21,13 +21,11 @@ you will not be given full credit for the lab.
 
 ### Lab Objectives & Topics
 Following the lab, you should be able to:
-* Receive and activate your CSE account and log into the network 
-  using a Windows machine and your CSE account.
 * Clone projects from GitHub using Eclipse
 * Open, compile, and execute a given Java program in Eclipse.
 * Write a simple program in the Eclipse IDE, compile, and 
   execute that program.
-
+* Handin and grade your lab
 
 ### Peer Programming Pair-Up
 
@@ -62,14 +60,7 @@ lab.
 
 ### 1.1. Setup
 
-#### 1.1.1. Claim your CSE Account  
-
-If you do not yet have your CSE credentials, you can claim them
-at the following URL: https://cse-apps.unl.edu/amu/claim 
-If you already have a CSE account but do not remember your 
-password you can reset it at the same URL. 
-
-#### 1.1.2. Install Java Developer Kit  
+#### 1.1.1. Install the Java Developer Kit  
 
 You may already have "Java" installed on your computer, but this
 is most likely the Java Virtual Machine (JVM) that allows you to
@@ -81,7 +72,7 @@ URL.  Follow the instructions for downloading and installing.
 
 https://www.oracle.com/java/technologies/javase-downloads.html
 
-#### 1.1.3. Install Eclipse
+#### 1.1.2. Install Eclipse
 
 Eclipse is an Integrated Development Environment (IDE) for 
 Java development.  There are many other popular IDEs available 
@@ -169,7 +160,7 @@ We will now familiarize you with Eclipse by editing an existing
 project's code.
 
 1. Expand the `src` directory.  Under this we have a *package* named 
-`unl.cse`.  Java classes are organized in a hierarchy of packages.
+`unl.soc`.  Java classes are organized in a hierarchy of packages.
 Packages correspond to actual directories in your file system.  
 
 2. Expand the package and you'll find several *classes*.	All Java code 
@@ -353,7 +344,7 @@ you are enrolled in:
 
  * CSCE 156: <https://cse-linux-01.unl.edu/~c-cbourke3/CSCE156/grade/>
  * CSCE 156H: <https://cse-linux-01.unl.edu/~c-cbourke3/CSCE156H/grade/>
- * ECEN 194: <https://cse-linux-01.unl.edu/~c-cbourke3/ECEN194/grade/>
+ * ECEN 156: <https://cse-linux-01.unl.edu/~c-cbourke3/ECEN156/grade/>
 
 2. Login with your **Canvas credentials** if necessary and select the 
 appropriate assignment and click "Grade"
