@@ -65,12 +65,9 @@ lab.
 You may already have "Java" installed on your computer, but this
 is most likely the Java Virtual Machine (JVM) that allows you to
 run Java programs.  To actually develop Java programs you need a
-Java Development Kit (JDK).  There are several alternative JDKs
-and you are welcome to explore them, but for this course, we are
-recommending Oracle's JDK available for download at the following
-URL.  Follow the instructions for downloading and installing.
+Java Development Kit (JDK).  We recommend you use Amazon's Corretto:
 
-https://www.oracle.com/java/technologies/javase-downloads.html
+https://aws.amazon.com/corretto/
 
 #### 1.1.2. Install Eclipse
 
