@@ -7,32 +7,30 @@ import org.joda.time.Period;
 // This is some sort of java program
 // I guess, this is really bad documentation
 //so Im not ReAlLy SuRe.
-public class Birthday {public static void main(String args[]) {
-		
-String name = "Java";
+public class Birthday {
+	public static void main(String args[]) {
 
-int 
-month = 1;
-int date  = 23;
-int year  = 1996;
+		String name = "Megan";
 
-DateTime              bday = 
-		   new DateTime(year, month, date, 0, 0);
-DateTime today = new DateTime();
+		int month = 8;
+		int date = 12;
+		int year = 1989;
 
-Period age = new Period(bday, today);
+		DateTime bday = new DateTime(year, month, date, 0, 0);
+		DateTime today = new DateTime();
 
-int years = age.getYears();
-int months = age.getMonths();
-int days = age.getWeeks() * 7 + age.getDays();
+		Period age = new Period(bday, today);
 
-DateTime next_bday = new DateTime(year + years + 1, month, date, 0, 0);
-Interval days_to_next_bday_i = 
-  new Interval(today, next_bday);
-double days_remaining = 
-  days_to_next_bday_i.toDurationMillis() / (1000 * 60 * 60 * 24) + 1;
+		int years = age.getYears();
+		int months = age.getMonths();
+		int days = age.getWeeks() * 7 + age.getDays();
 
-                  //TODO: write code to output results here
-		
-}
+		DateTime nextBday = new DateTime(year + years + 1, month, date, 0, 0);
+		Interval daysToNextBdayI = new Interval(today, nextBday);
+		double daysRemaining = daysToNextBdayI.toDurationMillis() / (1000 * 60 * 60 * 24) + 1;
+
+		System.out.println("Greetings, " +name+ ". Today you are " +years+ " years, " +month+ " months, and " +days+ " days old.");
+//TODO: write code to output results here
+
+	}
 }
